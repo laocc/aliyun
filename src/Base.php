@@ -6,12 +6,12 @@ use AlibabaCloud\Client\AlibabaCloud;
 
 abstract class Base
 {
-    protected $accessKeyId;
-    protected $accessKeySecret;
-    protected $regionID = 'cn-shanghai';
-    protected $debug = false;
-    protected $timeout = 3;
-    protected $version = 'v20150109';
+    protected string $accessKeyId;
+    protected string $accessKeySecret;
+    protected string $regionID = 'cn-shanghai';
+    protected bool $debug = false;
+    protected int $timeout = 3;
+    protected string $version = 'v20150109';
 
     public function __construct(array $option = [])
     {
