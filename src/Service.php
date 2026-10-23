@@ -15,7 +15,7 @@ class Service extends _Base
      * @throws \AlibabaCloud\Client\Exception\ClientException
      * @throws \AlibabaCloud\Client\Exception\ServerException
      */
-    public function load(string $RegionId = null)
+    public function load(?string $RegionId = null)
     {
         //->withRegionId($RegionId)
         try {
